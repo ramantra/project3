@@ -1,0 +1,12 @@
+.sprite {
+    width: 500px;
+    height: 500px;
+    background: url(Animation\ artboard.png) 0 0 no-repeat;
+    animation: play 2s steps(12) infinite;
+}
+
+@keyframes play {
+    0%{background-position: 0px;}
+    100%{background-position: -6000px;}
+}
+

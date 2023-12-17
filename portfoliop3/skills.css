@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Telugu MN', serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* Hero Section Styling */
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(pictures/bannerpic.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/* Navigation Styling */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 30px;
+}
+.logo{
+    height: 45px !important;
+    width: auto !important;
+}
+/* Navbar Links Styling */
+nav ul li{
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #808080;
+    transition: .4s;
+    transform: scale(1.2);
+    font-size: 26px;
+    text-decoration: none;
+}
+nav ul li a.active {
+    color: grey; 
+    font-weight: bold;
+    text-decoration: underline;
+    border-bottom: 2px;
+    margin-top: 4px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #d6d7d9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 30px;
+    font-size: 26px;
+    width: 250px;
+    justify-content: center;
+}
+
+.submenu li {
+    display: block;
+}
+
+.submenu li a {
+    color: blue; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-transform: capitalize;
+}
+/* Show the submenu on hover */
+nav ul li:hover .submenu {
+    display: block;
+    transform: scale(1.0);
+}
+/* Content Styling */
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: blue;
+    z-index: 1;
+}
+h1{
+    color: blue;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+/* About project Styling */
+.projects{
+    background-color: #d6d7d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    padding: 50px 0; 
+}
+.blue-line {
+    height: 5px;
+    background-color: blue; 
+    border-radius: 10px;
+    margin: 30px 0;
+}
+.about-project p{
+    color: white;
+    font-size: large;
+    align-items: center;
+}
+.about-project{
+    width: 90%; 
+    max-width: 550px;
+    color: blue;
+}
+.main{
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-project h2{
+    margin-left: 15px;
+    color: blue;
+    font-size: 65px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+/* Skill Cards Styling */
+.blue-line {
+    height: 5px; /* Height of the line */
+    width: 250px;
+    justify-content: center;
+    background-color: blue;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+.skills {
+    background: #d6d7d9;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    height: auto;
+    width: calc(45% - 30px);
+    padding: 20px 35px;
+    background-color: #d6d7d9;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: blue;
+}
+
+h5 {
+    color: blue;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.pra p {
+    color: black;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    background-color: #d6d7d9;
+    border-color: blue;
+    color: blue;
+    text-decoration: none;
+    border: 2px solid;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.card .button:hover {
+    background-color: white;
+    border: 2px solid #d6d7d9;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Added box shadow on hover */
+}
+footer {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: blue;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: blue;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: #d6d7d1;
+    text-decoration: none;
+    font-size: 30px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.end{
+    position: absolute;
+    color: blue;
+    bottom: 35px;
+    font-size: 14px;
+}
+/* Responsive Media Query */
+@media screen and (max-width: 768px) {
+nav {
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+nav ul {
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto; 
+}
+nav ul li {
+    padding: 10px 5px; 
+    display: inline-block; 
+}
+nav ul li a {
+    font-size: 16px;
+}
+h1 {
+    font-size: 25px;
+    justify-content: center;
+}
+h2 {
+    font-size: 40px;
+    justify-content: center;
+}
+h3 {
+    font-size: 15px; 
+    justify-content: center;
+}
+
+.main {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+.about .main {
+    flex-direction: column; /* Stack elements vertically */
+    width: 100%; /* Use the full width */
+}
+.about .main,
+.box,
+.card {
+    flex-direction: column; 
+    width: 100%; 
+}
+.card {
+    width: 100%; /* Make the cards take more space */
+    margin: 20px auto; /* Add margin to space out cards */
+}
+.title h2,
+.card h5 {
+    font-size: 30px; /* Adjust heading sizes */
+}
+.pra p {
+    font-size: 16px; /* Adjust paragraph sizes */
+}
+footer p:nth-child(1),
+.social a {
+    font-size: 20px; /* Adjust footer font sizes */
+}
+.end {
+    font-size: 12px; 
+}
+}
